@@ -15,7 +15,7 @@ const Footer = () => {
               </div>
               <div>
                 <span className="text-xl font-bold">Portal do Voluntariado</span>
-                <div className="text-sm text-jacto-green-400 font-medium">JACTO</div>
+                <div className="text-sm text-jacto-green-400 font-medium">GRUPO JACTO</div>
               </div>
             </div>
             <p className="text-jacto-gray-300 mb-4 max-w-md">

@@ -18,7 +18,7 @@ const HeroSection = () => {
             <h1 className="text-4xl lg:text-6xl font-bold text-jacto-gray-900 mb-6 leading-tight">
               Portal do
               <span className="text-primary block">Voluntariado</span>
-              <span className="text-2xl lg:text-3xl font-semibold text-jacto-gray-600">Jacto</span>
+              <span className="text-2xl lg:text-3xl font-semibold text-jacto-gray-600">GRUPO JACTO</span>
             </h1>
             
             <p className="text-xl text-jacto-gray-600 mb-8 leading-relaxed">

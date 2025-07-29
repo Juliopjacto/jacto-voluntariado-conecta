@@ -30,7 +30,7 @@ const Header = () => {
               </div>
               <div className="hidden sm:block">
                 <span className="text-xl font-bold text-jacto-gray-900">Portal do Voluntariado</span>
-                <div className="text-xs text-jacto-green-600 font-medium">JACTO</div>
+                <div className="text-xs text-jacto-green-600 font-medium">GRUPO JACTO</div>
               </div>
             </Link>
           </div>
