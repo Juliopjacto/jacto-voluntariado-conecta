@@ -70,7 +70,7 @@ const HeroSection = () => {
           <div className="animate-slide-up">
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=800&q=80"
+                src="public/pessoas-plantando-arvores-no-campo.jpg"
                 alt="Voluntários da Jacto em ação"
                 className="rounded-2xl shadow-2xl w-full h-96 lg:h-[500px] object-cover"
               />
@@ -84,7 +84,8 @@ const HeroSection = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-jacto-gray-900">Próxima ação</p>
-                    <p className="text-sm text-jacto-gray-600">Doação de alimentos</p>
+                    <p className="text-sm text-jacto-gray-600">Plantio de Árvores</p>
+                    <p className="text-sm text-jacto-gray-600">21/09</p>
                   </div>
                 </div>
               </div>

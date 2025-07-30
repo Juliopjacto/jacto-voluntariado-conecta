@@ -25,9 +25,11 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <Heart className="w-5 h-5 text-white" />
-              </div>
+              <img
+  src="/public/logo.png"
+  alt="Logo Portal do Voluntariado"
+  className="w-8 h-8 rounded-lg object-contain"
+/>
               <div className="hidden sm:block">
                 <span className="text-xl font-bold text-jacto-gray-900">Portal do Voluntariado</span>
                 <div className="text-xs text-jacto-green-600 font-medium">GRUPO JACTO</div>
