@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { Search, Filter, Eye, Users, Calendar } from "lucide-react";
-import Header from "@/components/Header";
+import Header from "@/Header";
 import Footer from "@/components/Footer";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";

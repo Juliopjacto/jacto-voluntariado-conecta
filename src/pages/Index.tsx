@@ -1,5 +1,5 @@
 
-import Header from "@/components/Header";
+import Header from "@/Header";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import FeaturedActions from "@/components/FeaturedActions";

@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { Send, CheckCircle, AlertCircle, User, Mail, Phone, Building } from "lucide-react";
-import Header from "@/components/Header";
+import Header from "@/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";

@@ -70,7 +70,7 @@ const HeroSection = () => {
           <div className="animate-slide-up">
             <div className="relative">
               <img
-                src="public/pessoas-plantando-arvores-no-campo.jpg"
+                src="src/pessoas-plantando-arvores-no-campo.jpg"
                 alt="Voluntários da Jacto em ação"
                 className="rounded-2xl shadow-2xl w-full h-96 lg:h-[500px] object-cover"
               />

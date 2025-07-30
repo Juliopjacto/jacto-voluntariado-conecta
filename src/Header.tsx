@@ -26,7 +26,7 @@ const Header = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
               <img
-  src="/public/logo.png"
+  src="/src/logo.png"
   alt="Logo Portal do Voluntariado"
   className="w-8 h-8 rounded-lg object-contain"
 />
