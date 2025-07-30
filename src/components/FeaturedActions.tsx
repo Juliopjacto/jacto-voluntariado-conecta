@@ -9,10 +9,10 @@ const FeaturedActions = () => {
   const actions = [
     {
       id: 1,
-      title: "Doação de Alimentos - Natal Solidário",
+      title: "Confecção de Cartas para o Dia Mundial da Saúde Mental",
       description: "Arrecadação e distribuição de alimentos para famílias em situação de vulnerabilidade social na região de Pompéia.",
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80",
-      date: "15 Dezembro 2024",
+      image: "src/menina-pintando-com-pincel 1.jpg",
+      date: "10 de Setembro de 2025",
       location: "Centro de Distribuição - Pompéia",
       volunteers: 25,
       duration: "4 horas",
@@ -23,7 +23,7 @@ const FeaturedActions = () => {
       id: 2,
       title: "Mutirão de Limpeza do Rio Novo",
       description: "Ação de preservação ambiental com limpeza das margens do Rio Novo e plantio de mudas nativas.",
-      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80",
+      image: "src/menina-pintando-com-pincel 1.jpg",
       date: "22 Dezembro 2024",
       location: "Parque Ecológico - Rio Novo",
       volunteers: 40,

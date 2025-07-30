@@ -22,7 +22,7 @@ const HeroSection = () => {
             </h1>
             
             <p className="text-xl text-jacto-gray-600 mb-8 leading-relaxed">
-              Conectamos colaboradores da Jacto com ações sociais que transformam vidas. 
+              Conectamos colaboradores do Grupo Jacto com ações sociais que transformam vidas. 
               Seja parte dessa corrente do bem e faça a diferença na sua comunidade.
             </p>
 
