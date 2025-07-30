@@ -11,7 +11,7 @@ const FeaturedActions = () => {
       id: 1,
       title: "Confecção de Cartas para o Dia Mundial da Saúde Mental",
       description: "Arrecadação e distribuição de alimentos para famílias em situação de vulnerabilidade social na região de Pompéia.",
-      image: "src/menina-pintando-com-pincel 1.jpg",
+      image: "menina-pintando-com-pincel 1.jpg",
       date: "10 de Setembro de 2025",
       location: "Centro de Distribuição - Pompéia",
       volunteers: 25,
