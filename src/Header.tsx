@@ -26,10 +26,10 @@ const Header = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
               <img
-  src="/logo.png"
-  alt="Logo Portal do Voluntariado"
-  className="w-8 h-8 rounded-lg object-contain"
-/>
+                src="/logo.png"
+                alt="Logo Portal do Voluntariado"
+                className="w-8 h-8 rounded-lg object-contain"
+              />
               <div className="hidden sm:block">
                 <span className="text-xl font-bold text-jacto-gray-900">Portal do Voluntariado</span>
                 <div className="text-xs text-jacto-green-600 font-medium">GRUPO JACTO</div>
@@ -44,11 +44,10 @@ const Header = () => {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                    isActive(item.href)
+                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${isActive(item.href)
                       ? "bg-primary text-white"
                       : "text-jacto-gray-700 hover:text-primary hover:bg-jacto-gray-50"
-                  }`}
+                    }`}
                 >
                   {item.name}
                 </Link>
@@ -77,11 +76,10 @@ const Header = () => {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
-                    isActive(item.href)
+                  className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${isActive(item.href)
                       ? "bg-primary text-white"
                       : "text-jacto-gray-700 hover:text-primary hover:bg-jacto-gray-50"
-                  }`}
+                    }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
