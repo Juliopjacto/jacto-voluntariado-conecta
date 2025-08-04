@@ -59,7 +59,7 @@ const Calendar = () => {
   location: "Auditório da Jacto",
   volunteers: 18,
   duration: "2 horas",
-  status: "upcoming"
+  status: "confirmed"
 },
 {
   id: 6,
