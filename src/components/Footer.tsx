@@ -69,7 +69,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="text-jacto-gray-300 hover:text-jacto-green-400 transition-colors"
                 >
-                  Site Oficial Jacto
+                  Site Oficial Grupo Jacto
                 </a>
               </li>
             </ul>
@@ -81,16 +81,16 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-jacto-green-400" />
-                <span className="text-jacto-gray-300 text-sm">voluntariado@jacto.com.br</span>
+                <span className="text-jacto-gray-300 text-sm">voluntariado@grupojacto.com.br</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-jacto-green-400" />
-                <span className="text-jacto-gray-300 text-sm">(14) 3404-7000</span>
+                <span className="text-jacto-gray-300 text-sm">(14 3405-2100 ) </span>
               </div>
               <div className="flex items-start space-x-2">
                 <MapPin className="w-4 h-4 text-jacto-green-400 mt-0.5" />
                 <span className="text-jacto-gray-300 text-sm">
-                  Rua Condessa Anita Lopes, 85<br />
+                  Rua Dr. Luiz Miranda, 1650<br />
                   Pompéia, SP - 17580-000
                 </span>
               </div>
@@ -100,7 +100,7 @@ const Footer = () => {
 
         <div className="border-t border-jacto-gray-800 mt-8 pt-8 text-center">
           <p className="text-jacto-gray-400 text-sm">
-            © 2025 Jacto - Todos os direitos reservados.
+            © 2025 Grupo Jacto - Todos os direitos reservados.
           </p>
           <p className="text-jacto-gray-500 text-xs mt-2">
             Transformando vidas através do voluntariado corporativo
