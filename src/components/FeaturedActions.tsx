@@ -10,10 +10,10 @@ const FeaturedActions = () => {
     {
       id: 1,
       title: "Confecção de Cartas para o Dia Mundial da Saúde Mental",
-      description: "Arrecadação e distribuição de alimentos para famílias em situação de vulnerabilidade social na região de Pompéia.",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip e ",
       image: "img/menina-pintando-com-pincel.jpg",
       date: "10 de Setembro de 2025",
-      location: "Centro de Distribuição - Pompéia",
+      location: "Jacto Matriz",
       volunteers: 25,
       duration: "4 horas",
       status: "Inscrições abertas",
@@ -21,27 +21,27 @@ const FeaturedActions = () => {
     },
     {
       id: 2,
-      title: "Mutirão de Limpeza do Rio Novo",
-      description: "Ação de preservação ambiental com limpeza das margens do Rio Novo e plantio de mudas nativas.",
-      image: "img/menina-pintando-com-pincel.jpg",
-      date: "22 Dezembro 2024",
-      location: "Parque Ecológico - Rio Novo",
+      title: "Arrecadação e doação de brinquedos para crianças",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip e",
+      image: "img/kids.jpeg",
+      date: "12 de outubro 2025",
+      location: "Jacto",
       volunteers: 40,
       duration: "6 horas",
-      status: "Inscrições abertas",
+      status: "Em breve",
       category: "Meio Ambiente"
     },
     {
       id: 3,
-      title: "Oficina de Educação Digital",
-      description: "Ensino básico de informática e inclusão digital para jovens e adultos da comunidade local.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80",
-      date: "10 Janeiro 2025",
-      location: "Centro Comunitário São José",
+      title: "Ação em Parceria com a Saúde Integral ",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip e",
+      image: "img/saude.jpeg",
+      date: "14 de Novembro de 2025",
+      location: "Jacto",
       volunteers: 15,
       duration: "3 horas",
       status: "Em breve",
-      category: "Educação"
+      category: "Saude"
     }
   ];
 
