@@ -50,7 +50,38 @@ const Calendar = () => {
       volunteers: 35,
       duration: "5 horas",
       status: "upcoming"
-    }
+    },
+    {
+  id: 5,
+  title: "Confecção de Cartas para o Dia Mundial da Saúde Mental",
+  date: new Date(2025, 8, 10), // 10 de Setembro de 2025
+  time: "13:30",
+  location: "Auditório da Jacto",
+  volunteers: 18,
+  duration: "2 horas",
+  status: "upcoming"
+},
+{
+  id: 6,
+  title: "Arrecadação e doação de brinquedos para crianças",
+  date: new Date(2025, 9, 12), // 12 de Outubro de 2025
+  time: "09:00",
+  location: "Centro de Distribuição",
+  volunteers: 30,
+  duration: "4 horas",
+  status: "upcoming"
+},
+{
+  id: 7,
+  title: "Ação em Parceria com a Saúde Integral",
+  date: new Date(2025, 10, 14), // 14 de Novembro de 2025
+  time: "08:00",
+  location: "Unidade de Saúde Local",
+  volunteers: 22,
+  duration: "3 horas",
+  status: "upcoming"
+}
+
   ];
 
   const getDaysInMonth = (date: Date) => {
