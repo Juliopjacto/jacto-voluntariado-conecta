@@ -9,39 +9,39 @@ const FeaturedActions = () => {
   const actions = [
     {
       id: 1,
-      title: "Confecção de Cartas para o Dia Mundial da Saúde Mental",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip e ",
-      image: "img/menina-pintando-com-pincel.jpg",
-      date: "10 de Setembro de 2025",
-      location: "Jacto Matriz",
-      volunteers: 25,
-      duration: "4 horas",
-      status: "Inscrições abertas",
-      category: "Alimentação"
+      title: "Oficina de Cerâmica artesanal",
+      description: "Oficinas de cerâmica para desenvolvimento de habilidades manuais e criatividade. Participe e aprenda uma nova arte.",
+      image: "/ceramica.jpg",
+      date: "Ano todo",
+      location: "Centro de Convivência",
+      volunteers: 15,
+      duration: "Semanal",
+      status: "Em andamento",
+      category: "Arte e Cultura"
     },
     {
       id: 2,
-      title: "Arrecadação e doação de brinquedos para crianças",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip e",
-      image: "img/kids.jpeg",
-      date: "12 de outubro 2025",
-      location: "Jacto",
-      volunteers: 40,
-      duration: "6 horas",
+      title: "Arrecadação de Tampinhas e Lacres",
+      description: "Junte-se a nós nesta campanha de arrecadação de tampinhas plásticas e lacres de alumínio. O material arrecadado será revertido em cadeiras de rodas para quem precisa.",
+      image: "/tampinha.jpg",
+      date: "Março de 2026",
+      location: "Todas as unidades",
+      volunteers: 0,
+      duration: "30 dias",
       status: "Em breve",
       category: "Meio Ambiente"
     },
     {
       id: 3,
-      title: "Ação em Parceria com a Saúde Integral ",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip e",
-      image: "img/saude.jpeg",
-      date: "14 de Novembro de 2025",
-      location: "Jacto",
-      volunteers: 15,
-      duration: "3 horas",
-      status: "Em breve",
-      category: "Saude"
+      title: "Natal em família",
+      description: "Celebração especial de Natal com as famílias da comunidade, promovendo união, solidariedade e momentos de alegria.",
+      image: "/Natal_2026.jpg",
+      date: "14 de Dezembro de 2025",
+      location: "Centro Comunitário",
+      volunteers: 45,
+      duration: "6 horas",
+      status: "Concluída",
+      category: "Eventos"
     }
   ];
 
@@ -51,8 +51,10 @@ const FeaturedActions = () => {
         return "bg-jacto-green-100 text-jacto-green-800";
       case "Em breve":
         return "bg-yellow-100 text-yellow-800";
+      case "Em andamento":
+        return "bg-jacto-green-50 text-jacto-green-700 border border-jacto-green-200";
       case "Concluída":
-        return "bg-jacto-gray-100 text-jacto-gray-800";
+        return "bg-red-50 text-red-400 border border-red-100";
       default:
         return "bg-jacto-gray-100 text-jacto-gray-800";
     }
@@ -74,9 +76,9 @@ const FeaturedActions = () => {
         {/* Actions Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {actions.map((action, index) => (
-            <Card 
-              key={action.id} 
-              className="overflow-hidden hover-lift group animate-fade-in border-0 shadow-lg"
+            <Card
+              key={action.id}
+              className="overflow-hidden hover-lift group animate-fade-in border-0 shadow-lg flex flex-col h-full"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="relative overflow-hidden">
@@ -96,19 +98,19 @@ const FeaturedActions = () => {
                   </Badge>
                 </div>
               </div>
-              
+
               <CardHeader className="pb-2">
                 <CardTitle className="text-lg group-hover:text-primary transition-colors">
                   {action.title}
                 </CardTitle>
               </CardHeader>
-              
-              <CardContent className="space-y-4">
+
+              <CardContent className="flex flex-col flex-grow space-y-4">
                 <p className="text-jacto-gray-600 text-sm leading-relaxed">
                   {action.description}
                 </p>
-                
-                <div className="space-y-2">
+
+                <div className="space-y-2 flex-grow">
                   <div className="flex items-center text-sm text-jacto-gray-500">
                     <Calendar className="w-4 h-4 mr-2 text-primary" />
                     {action.date}
@@ -128,9 +130,9 @@ const FeaturedActions = () => {
                     </div>
                   </div>
                 </div>
-                
-                <Button 
-                  className="w-full group" 
+
+                <Button
+                  className="w-full group mt-auto"
                   disabled={action.status === "Concluída"}
                 >
                   {action.status === "Inscrições abertas" ? "Inscrever-se" : "Saiba mais"}

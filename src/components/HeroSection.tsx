@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
-    <section className="gradient-hero py-20 lg:py-28">
+    <section className="gradient-hero py-12 lg:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Conteúdo Principal */}
@@ -14,15 +14,14 @@ const HeroSection = () => {
               <Heart className="w-4 h-4 mr-2" />
               Juntos fazemos a diferença
             </div>
-            
+
             <h1 className="text-4xl lg:text-6xl font-bold text-jacto-gray-900 mb-6 leading-tight">
-              Portal do
-              <span className="text-primary block">Voluntariado</span>
-              <span className="text-2xl lg:text-3xl font-semibold text-jacto-gray-600">GRUPO JACTO</span>
+              Espaço do
+              <span className="text-primary block">Voluntário</span>
             </h1>
-            
+
             <p className="text-xl text-jacto-gray-600 mb-8 leading-relaxed">
-              Conectamos colaboradores do Grupo Jacto com ações sociais que transformam vidas. 
+              Conectamos nossos colaboradores com ações sociais que impactam  vidas.
               Seja parte dessa corrente do bem e faça a diferença na sua comunidade.
             </p>
 
@@ -33,11 +32,11 @@ const HeroSection = () => {
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
-              <Link to="/acoes">
+              <a href="https://fsnt.org.br/voluntariado-4/" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" size="lg" className="w-full sm:w-auto">
-                  Ver ações disponíveis
+                  Conheça outros projetos do grupo
                 </Button>
-              </Link>
+              </a>
             </div>
 
             {/* Stats */}
@@ -60,7 +59,7 @@ const HeroSection = () => {
                 <div className="flex items-center justify-center w-12 h-12 bg-primary/10 rounded-lg mb-2 mx-auto">
                   <Heart className="w-6 h-6 text-primary" />
                 </div>
-                <div className="text-2xl font-bold text-jacto-gray-900">5K+</div>
+                <div className="text-2xl font-bold text-jacto-gray-900">5000+</div>
                 <div className="text-sm text-jacto-gray-600">Vidas impactadas</div>
               </div>
             </div>
@@ -70,12 +69,12 @@ const HeroSection = () => {
           <div className="animate-slide-up">
             <div className="relative">
               <img
-                src="/pessoas-plantando-arvores-no-campo.jpg"
+                src="/tampinha.jpg"
                 alt="Voluntários da Jacto em ação"
                 className="rounded-2xl shadow-2xl w-full h-96 lg:h-[500px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
-              
+
               {/* Badge flutuante */}
               <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm rounded-lg p-4 shadow-lg">
                 <div className="flex items-center space-x-3">
@@ -84,8 +83,8 @@ const HeroSection = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-jacto-gray-900">Próxima ação</p>
-                    <p className="text-sm text-jacto-gray-600">Plantio de Árvores</p>
-                    <p className="text-sm text-jacto-gray-600">21/09</p>
+                    <p className="text-sm text-jacto-gray-600">Arrecadação de Tampinhas e Lacres.</p>
+                    <p className="text-sm text-jacto-gray-600 font-bold">Março de 2026</p>
                   </div>
                 </div>
               </div>

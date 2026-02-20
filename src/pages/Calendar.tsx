@@ -13,75 +13,114 @@ const Calendar = () => {
   const events = [
     {
       id: 1,
-      title: "Doação de Alimentos",
-      date: new Date(2024, 11, 15), // December 15, 2024
+      title: "Doação de cestas e alimentos arrecadados no natal",
+      date: new Date(2026, 0, 28), // 28 de Janeiro de 2026
       time: "08:00",
       location: "Centro de Distribuição",
-      volunteers: 25,
+      volunteers: 35,
       duration: "4 horas",
-      status: "confirmed"
+      status: "completed",
+      description: "Distribuição de cestas básicas e alimentos arrecadados durante a campanha de Natal"
     },
     {
       id: 2,
-      title: "Mutirão de Limpeza",
-      date: new Date(2024, 11, 22), // December 22, 2024
-      time: "07:00",
-      location: "Rio Novo",
-      volunteers: 40,
-      duration: "6 horas",
-      status: "confirmed"
+      title: "Arrecadação de tampinhas",
+      date: new Date(2026, 2, 9), // 9 de Março de 2026
+      time: "08:00",
+      location: "Todas as unidades",
+      volunteers: 0,
+      duration: "30 dias",
+      status: "confirmed",
+      description: "Campanha de arrecadação de tampinhas plásticas para conversão em cadeiras de rodas"
     },
     {
       id: 3,
-      title: "Oficina Digital",
-      date: new Date(2025, 0, 10), // January 10, 2025
-      time: "14:00",
-      location: "Centro Comunitário",
-      volunteers: 15,
-      duration: "3 horas",
-      status: "upcoming"
+      title: "Arrecadação de agasalho",
+      date: new Date(2026, 4, 13), // 13 de Maio de 2026
+      time: "08:00",
+      location: "Todas as unidades",
+      volunteers: 0,
+      duration: "15 dias",
+      status: "upcoming",
+      description: "Campanha de arrecadação de agasalhos para doação às comunidades carentes"
     },
     {
       id: 4,
-      title: "Plantio de Árvores",
-      date: new Date(2025, 0, 28), // January 28, 2025
-      time: "06:30",
+      title: "Doação de mudas",
+      date: new Date(2026, 5, 2), // 2 de Junho de 2026
+      time: "09:00",
       location: "Parque Municipal",
-      volunteers: 35,
-      duration: "5 horas",
-      status: "upcoming"
+      volunteers: 25,
+      duration: "3 horas",
+      status: "upcoming",
+      description: "Distribuição de mudas de árvores nativas para reflorestamento"
     },
     {
-  id: 5,
-  title: "Confecção de Cartas para o Dia Mundial da Saúde Mental",
-  date: new Date(2025, 8, 10), // 10 de Setembro de 2025
-  time: "13:30",
-  location: "Auditório da Jacto",
-  volunteers: 18,
-  duration: "2 horas",
-  status: "confirmed"
-},
-{
-  id: 6,
-  title: "Arrecadação e doação de brinquedos para crianças",
-  date: new Date(2025, 9, 12), // 12 de Outubro de 2025
-  time: "09:00",
-  location: "Centro de Distribuição",
-  volunteers: 30,
-  duration: "4 horas",
-  status: "upcoming"
-},
-{
-  id: 7,
-  title: "Ação em Parceria com a Saúde Integral",
-  date: new Date(2025, 10, 14), // 14 de Novembro de 2025
-  time: "08:00",
-  location: "Unidade de Saúde Local",
-  volunteers: 22,
-  duration: "3 horas",
-  status: "upcoming"
-}
-
+      id: 5,
+      title: "Visita ao asilo",
+      date: new Date(2026, 6, 19), // 19 de Julho de 2026
+      time: "14:00",
+      location: "Asilo São Vicente",
+      volunteers: 20,
+      duration: "3 horas",
+      status: "upcoming",
+      description: "Visita recreativa e de convivência com os idosos do asilo"
+    },
+    {
+      id: 6,
+      title: "Plantio de árvores",
+      date: new Date(2026, 8, 15), // 15 de Setembro de 2026
+      time: "07:00",
+      location: "Área de Reflorestamento",
+      volunteers: 40,
+      duration: "5 horas",
+      status: "upcoming",
+      description: "Mutirão de plantio de árvores nativas para recuperação ambiental"
+    },
+    {
+      id: 7,
+      title: "Cartas de esperança",
+      date: new Date(2026, 8, 25), // 25 de Setembro de 2026
+      time: "13:30",
+      location: "Auditório da Jacto",
+      volunteers: 30,
+      duration: "2 horas",
+      status: "upcoming",
+      description: "Confecção de cartas motivacionais para pacientes em tratamento"
+    },
+    {
+      id: 8,
+      title: "Doação de brinquedos",
+      date: new Date(2026, 9, 5), // 5 de Outubro de 2026
+      time: "09:00",
+      location: "Centro Comunitário",
+      volunteers: 35,
+      duration: "4 horas",
+      status: "upcoming",
+      description: "Arrecadação e distribuição de brinquedos para crianças carentes"
+    },
+    {
+      id: 9,
+      title: "Doação de mechas",
+      date: new Date(2026, 9, 12), // 12 de Outubro de 2026
+      time: "09:00",
+      location: "Centro de Distribuição",
+      volunteers: 20,
+      duration: "3 horas",
+      status: "upcoming",
+      description: "Campanha de doação de mechas de cabelo para confecção de perucas"
+    },
+    {
+      id: 10,
+      title: "Natal em família",
+      date: new Date(2026, 11, 13), // 13 de Dezembro de 2026
+      time: "14:00",
+      location: "Centro Comunitário",
+      volunteers: 50,
+      duration: "6 horas",
+      status: "upcoming",
+      description: "Celebração especial de Natal com as famílias da comunidade, promovendo união, solidariedade e momentos de alegria"
+    }
   ];
 
   const getDaysInMonth = (date: Date) => {
@@ -96,8 +135,8 @@ const Calendar = () => {
     return events.filter(event => {
       const eventDate = event.date;
       return eventDate.getDate() === day &&
-             eventDate.getMonth() === currentDate.getMonth() &&
-             eventDate.getFullYear() === currentDate.getFullYear();
+        eventDate.getMonth() === currentDate.getMonth() &&
+        eventDate.getFullYear() === currentDate.getFullYear();
     });
   };
 
@@ -130,6 +169,8 @@ const Calendar = () => {
         return "bg-jacto-green-500";
       case "upcoming":
         return "bg-yellow-500";
+      case "completed":
+        return "bg-red-400";
       default:
         return "bg-jacto-gray-500";
     }
@@ -137,8 +178,8 @@ const Calendar = () => {
 
   const isToday = (day: number) => {
     return today.getDate() === day &&
-           today.getMonth() === currentDate.getMonth() &&
-           today.getFullYear() === currentDate.getFullYear();
+      today.getMonth() === currentDate.getMonth() &&
+      today.getFullYear() === currentDate.getFullYear();
   };
 
   return (
@@ -187,7 +228,7 @@ const Calendar = () => {
                       </Button>
                     </div>
                   </CardHeader>
-                  
+
                   <CardContent>
                     {/* Day headers */}
                     <div className="grid grid-cols-7 gap-1 mb-4">
@@ -197,29 +238,27 @@ const Calendar = () => {
                         </div>
                       ))}
                     </div>
-                    
+
                     {/* Calendar grid */}
                     <div className="grid grid-cols-7 gap-1">
                       {/* Empty cells for days before the first day of the month */}
                       {Array.from({ length: firstDay }, (_, i) => (
                         <div key={i} className="p-2 h-24"></div>
                       ))}
-                      
+
                       {/* Days of the month */}
                       {Array.from({ length: daysInMonth }, (_, i) => {
                         const day = i + 1;
                         const eventsForDay = getEventsForDate(day);
-                        
+
                         return (
                           <div
                             key={day}
-                            className={`p-2 h-24 border rounded-lg hover:bg-jacto-gray-50 transition-colors ${
-                              isToday(day) ? 'bg-primary/10 border-primary' : 'border-jacto-gray-200'
-                            }`}
+                            className={`p-2 h-24 border rounded-lg hover:bg-jacto-gray-50 transition-colors ${isToday(day) ? 'bg-primary/10 border-primary' : 'border-jacto-gray-200'
+                              }`}
                           >
-                            <div className={`text-sm font-medium mb-1 ${
-                              isToday(day) ? 'text-primary' : 'text-jacto-gray-900'
-                            }`}>
+                            <div className={`text-sm font-medium mb-1 ${isToday(day) ? 'text-primary' : 'text-jacto-gray-900'
+                              }`}>
                               {day}
                             </div>
                             <div className="space-y-1">
@@ -250,25 +289,24 @@ const Calendar = () => {
                   <CardHeader>
                     <CardTitle className="flex items-center">
                       <CalendarIcon className="w-5 h-5 mr-2 text-primary" />
-                      Próximas Ações
+                      Ações 2026
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-4">
                     {events
-                      .filter(event => event.date >= today)
                       .sort((a, b) => a.date.getTime() - b.date.getTime())
-                      .slice(0, 5)
+                      .slice(0, 3)
                       .map(event => (
                         <div key={event.id} className="border-l-4 border-primary pl-4 py-2">
                           <div className="flex items-start justify-between mb-2">
                             <h4 className="font-semibold text-jacto-gray-900">{event.title}</h4>
-                            <Badge 
+                            <Badge
                               className={`${getStatusColor(event.status)} text-white text-xs`}
                             >
-                              {event.status === 'confirmed' ? 'Confirmado' : 'Em breve'}
+                              {event.status === 'confirmed' ? 'Confirmado' : event.status === 'completed' ? 'Concluída' : 'Em breve'}
                             </Badge>
                           </div>
-                          
+
                           <div className="space-y-1 text-sm text-jacto-gray-600">
                             <div className="flex items-center">
                               <CalendarIcon className="w-3 h-3 mr-2" />
@@ -307,6 +345,10 @@ const Calendar = () => {
                     <div className="flex items-center space-x-3">
                       <div className="w-4 h-4 bg-yellow-500 rounded-full"></div>
                       <span className="text-sm text-jacto-gray-600">Ação em breve</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-4 h-4 bg-red-400 rounded-full"></div>
+                      <span className="text-sm text-jacto-gray-600">Concluída</span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <div className="w-4 h-4 border-2 border-primary rounded-full"></div>

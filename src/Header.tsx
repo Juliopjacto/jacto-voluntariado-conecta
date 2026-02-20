@@ -14,6 +14,7 @@ const Header = () => {
     { name: "Agenda", href: "/agenda" },
     // { name: "Galeria", href: "/galeria" },
     { name: "Inscrições", href: "/inscricoes" },
+    { name: "Comunidade", href: "https://jacto.csod.com/phnx/driver.aspx?routename=Social/Communities/CommunityWithFeed&Root=71", external: true },
   ];
 
   const isActive = (href: string) => location.pathname === href;
@@ -27,30 +28,47 @@ const Header = () => {
             <Link to="/" className="flex items-center space-x-2">
               <img
                 src="/logo.png"
-                alt="Logo Portal do Voluntariado"
-                className="w-8 h-8 rounded-lg object-contain"
+                alt="Logo Espaço do Voluntariado"
+                className="w-16 h-16 rounded-lg object-contain"
               />
               <div className="hidden sm:block">
-                <span className="text-xl font-bold text-jacto-gray-900">Portal do Voluntariado</span>
-                <div className="text-xs text-jacto-green-600 font-medium">GRUPO JACTO</div>
+                <span className="text-3xl font-bold text-jacto-gray-900 font-outfit tracking-wide">Voluntário</span>
               </div>
             </Link>
+            <div className="h-10 w-px bg-gray-300 mx-6 hidden sm:block"></div>
+            <img
+              src="/logo_grupo.png"
+              alt="Grupo Jacto"
+              className="h-12 object-contain hidden sm:block"
+            />
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${isActive(item.href)
+                item.external ? (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-3 py-2 rounded-md text-sm font-medium transition-colors text-jacto-gray-700 hover:text-primary hover:bg-jacto-gray-50"
+                  >
+                    {item.name}
+                  </a>
+                ) : (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${isActive(item.href)
                       ? "bg-primary text-white"
                       : "text-jacto-gray-700 hover:text-primary hover:bg-jacto-gray-50"
-                    }`}
-                >
-                  {item.name}
-                </Link>
+                      }`}
+                  >
+                    {item.name}
+                  </Link>
+                )
               ))}
             </div>
           </div>
@@ -73,17 +91,30 @@ const Header = () => {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
               {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${isActive(item.href)
+                item.external ? (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block px-3 py-2 rounded-md text-base font-medium transition-colors text-jacto-gray-700 hover:text-primary hover:bg-jacto-gray-50"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.name}
+                  </a>
+                ) : (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${isActive(item.href)
                       ? "bg-primary text-white"
                       : "text-jacto-gray-700 hover:text-primary hover:bg-jacto-gray-50"
-                    }`}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.name}
-                </Link>
+                      }`}
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                )
               ))}
             </div>
           </div>
