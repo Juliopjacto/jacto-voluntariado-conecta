@@ -141,7 +141,7 @@ export default {
 				'slide-up': 'slide-up 0.5s ease-out'
 			},
 			fontFamily: {
-				'jacto': ['Inter', 'system-ui', 'sans-serif'],
+				'jacto': ['Verdana', 'Geneva', 'sans-serif'],
 			}
 		}
 	},
