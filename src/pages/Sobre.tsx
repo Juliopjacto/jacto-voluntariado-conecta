@@ -1,4 +1,4 @@
-import { ExternalLink, Trees } from "lucide-react";
+import { ExternalLink, Sprout } from "lucide-react";
 import Header from "@/Header";
 import Footer from "@/components/Footer";
 
@@ -15,9 +15,9 @@ const Sobre = () => {
                             <span className="inline-block text-xs font-semibold tracking-widest uppercase text-jacto-green-600 mb-4">
                                 Programa Institucional
                             </span>
-                            <Trees className="w-12 h-12 text-jacto-green-500 mb-4" />
+                            <Sprout className="w-12 h-12 text-jacto-green-500 mb-4" />
                             <h1 className="text-4xl lg:text-5xl font-bold text-jacto-gray-900 leading-tight mb-5 animate-fade-in">
-                                Árvore da Cidadania
+                                Ecossistema 
                             </h1>
                             <p className="text-lg text-jacto-gray-600 leading-relaxed animate-slide-up">
                                 Uma iniciativa do Grupo Jacto que apoia projetos sociais de colaboradores

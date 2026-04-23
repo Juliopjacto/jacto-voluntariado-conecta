@@ -1,7 +1,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Trees, House, CalendarDays, ClipboardList, Users } from "lucide-react";
+import { Menu, X, House, CalendarDays, ClipboardList, Users, Sprout } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,12 +20,12 @@ const Header = () => {
       ),
     },
     {
-      name: "Árvore da Cidadania",
+      name: "Ecossistema",
       href: "/sobre",
       label: (
         <span className="flex items-center gap-1.5">
-          <Trees className="w-4 h-4 text-jacto-green-600 shrink-0" />
-          da Cidadania
+          <Sprout className="w-4 h-4 text-jacto-green-600 shrink-0" />
+          Ecossistema
         </span>
       ),
     },

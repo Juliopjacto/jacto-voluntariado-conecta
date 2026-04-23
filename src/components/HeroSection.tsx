@@ -21,8 +21,7 @@ const HeroSection = () => {
             </h1>
 
             <p className="text-xl text-jacto-gray-600 mb-8 leading-relaxed">
-              Conectamos nossos colaboradores com ações sociais que impactam  vidas.
-              Seja parte dessa corrente do bem e faça a diferença na sua comunidade.
+              Conectamos nossos colaboradores com ações Voluntárias e Campanhas Sociais que impactam vidas. Seja parte dessa corrente do bem e faça a diferença!
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
@@ -34,7 +33,7 @@ const HeroSection = () => {
               </Link>
               <a href="https://fsnt.org.br/voluntariado-4/" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" size="lg" className="w-full sm:w-auto">
-                  Conheça outros projetos do grupo
+                  Saiba mais
                 </Button>
               </a>
             </div>
